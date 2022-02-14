@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#818282</color>
+    <color name="colorPrimaryDark">#FCAC03</color>
+    <color name="colorAccent">#FC3C02</color>
+
+    <color name="logoColorWhite">#FFFFFF</color>
+    <color name="logoColorBlack">#030403</color>
+    <color name="logoColorGrey">#818282</color>
+    <color name="logoColorRed">#FC3C02</color>
+    <color name="logoColorYellow">#FCAC03</color>
+    <color name="DarkGrey">#121212</color>
+    <color name="LightGrey">#434343</color>
+    <color name="DarkBlue">#132441</color>
+</resources>

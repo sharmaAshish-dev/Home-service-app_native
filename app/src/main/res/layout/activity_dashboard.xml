@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.dashboard">
+
+    <RelativeLayout
+        android:id="@+id/userNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="@drawable/top_view_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/male"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, "
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/logoColorBlack"
+                    android:layout_marginStart="20sp"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guest"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/logoColorBlack"
+                    android:layout_marginStart="5sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/editProfileBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edge_card"
+                android:backgroundTint="@color/DarkBlue"
+                android:text="edit Profile"
+                android:padding="10dp"
+                android:textColor="@color/logoColorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/userNameLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:paddingStart="40dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="40dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/noteManager"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:cardCornerRadius="14sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_below="@+id/imageSlider"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:padding="10sp"
+                        android:textColor="@color/logoColorWhite"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/manager"
+                        android:backgroundTint="#B7B7BC"
+                        android:backgroundTintMode="multiply"
+                        android:text="*For all services, \n\nManager will accompany for added Safety &amp; Security. "/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noteManager"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHomeServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Services"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/DarkBlue"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/txtHomeServices"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/electrician"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_electrician" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Electrician"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/carpenter"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_carpenter" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Carpenter"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/plumber"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_plumber"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Plumber"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tailor"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_tailoring"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tailoring"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/layout1"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/beautician"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_beautician"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Beautician"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tuition"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_tution_teacher"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="home tution"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vehicle"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_vehicle"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Vehicle"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tiffin"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40sp"
+                                android:layout_height="60sp"
+                                android:src="@drawable/ic_tiffin"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tiffin"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/layout2"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/grocery"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_grocery"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Grocery"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vegetables"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_vegetables"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Vegetable"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medicine"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_medicines"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Medicine"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/initationJwellery"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_jwellery"
+                                android:backgroundTint="@color/DarkBlue"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="jewellery"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/layout3"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/kidsWear"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_kids_wear"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kids Wear"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/womensWear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_vegetables" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Women's Wear"
+                            android:textColor="@color/logoColorBlack" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/category2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category1"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApplianceServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appliance Services"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/DarkBlue"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/txtApplianceServices"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/RO"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="35sp"
+                                android:layout_height="35sp"
+                                android:src="@drawable/ic_purifier"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="R.O"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/geyser"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="35sp"
+                                android:layout_height="35sp"
+                                android:src="@drawable/ic_water_heater"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Geyser"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fridge"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="60sp"
+                                android:src="@drawable/ic_fridge"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fridge"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/microwave"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_microwave"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Microwave"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/layout5"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/washing"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_washing_machine"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Washer"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/AC"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_air_conditioner"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A.C"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/airCooler"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_air_cooler"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Air cooler"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/TV"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/round_edge_card"
+                            android:elevation="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:src="@drawable/ic_monitor"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="T.V"
+                            android:gravity="center"
+                            android:textColor="@color/logoColorBlack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/customerCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/category2"
+                android:gravity="center"
+                android:elevation="8dp"
+                android:background="@drawable/round_edge_card"
+                android:layout_margin="20sp"
+                android:padding="2dp"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_customer_service"/>
+
+                <TextView
+                    android:id="@+id/txtCustomerCare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Customer Care"
+                    android:textColor="@color/DarkBlue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

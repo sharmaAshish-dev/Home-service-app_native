@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    tools:context=".Activities.customerCare">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/DarkBlue"/>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/logoColorWhite"/>
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Customer Care"
+            android:elevation="8dp"
+            android:textColor="@color/logoColorWhite"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/txtHeaderImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:elevation="8dp"
+                android:background="@drawable/round_edge_card">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/customer_header_image" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeaderImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:text="Contact us"
+                android:textColor="#2E2E2E"
+                android:textSize="26dp" />
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:layout_below="@+id/txtContact"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:background="@color/logoColorRed" />
+
+            <TextView
+                android:id="@+id/txtContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:text="Customer Care Number: "
+                android:textColor="#2E2E2E"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/contactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtContactNo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:text=""
+                android:textColor="@color/DarkBlue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/contactNo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactNo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:text=""
+                android:textColor="@color/DarkBlue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtAdmissionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactNo2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="14dp"
+                android:text="Contact Support: "
+                android:textColor="#2E2E2E"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/admissionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAdmissionNo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="12dp"
+                android:text=""
+                android:textColor="@color/DarkBlue"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileForm"
+    android:background="@drawable/ic_bg_top_header">
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_semi_circle"
+        android:layout_alignParentBottom="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp">
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/logoColorWhite"/>
+
+                <TextView
+                    android:id="@+id/txtHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Edit Profile"
+                    android:elevation="8dp"
+                    android:textColor="@color/logoColorWhite"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="24sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/customerDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/sharp_edge_card"
+                android:elevation="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="My Details"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="22sp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/txtCustomerName"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:src="@drawable/male"/>
+
+                <RelativeLayout
+                    android:id="@+id/detailsField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userImage">
+
+                    <LinearLayout
+                        android:id="@+id/customerNameFieldLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="20sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_person"
+                            app:tint="@color/DarkBlue" />
+
+                        <EditText
+                            android:id="@+id/customerFirstName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:inputType="text"
+                            android:hint="First Name"
+                            android:textColor="#3E3E3E"
+                            android:textSize="16dp"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/customerLastName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:inputType="text"
+                            android:hint="Last Name"
+                            android:textColor="#3E3E3E"
+                            android:textSize="16dp"
+                            android:layout_weight="2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/customerNumberFieldLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/customerNameFieldLayout"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="20sp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_baseline_phone_24"
+                            app:tint="@color/DarkBlue" />
+
+                        <EditText
+                            android:id="@+id/customerNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:hint="Enter Mobile Number"
+                            android:textColor="#3E3E3E"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/customerDropFieldLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/customerNumberFieldLayout"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="@color/DarkBlue" />
+
+                        <EditText
+                            android:id="@+id/customerAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:hint="Enter Address"
+                            android:textColor="#3E3E3E"
+                            android:textSize="16sp"
+                            android:layout_weight="4"/>
+
+                        <TextView
+                            android:id="@+id/getAddressBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Get"
+                            android:background="@drawable/round_edge_card"
+                            android:textColor="@color/logoColorWhite"
+                            android:backgroundTint="@color/DarkBlue"
+                            android:padding="10dp"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/customerPincodeFieldLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/customerDropFieldLayout"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="20sp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="@color/DarkBlue" />
+
+                        <EditText
+                            android:id="@+id/Pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:inputType="number"
+                            android:hint="Enter Pincode"
+                            android:textColor="#3E3E3E"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/customerLandmarkFieldLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/customerPincodeFieldLayout"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="20sp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="@color/DarkBlue" />
+
+                        <EditText
+                            android:id="@+id/Landmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:hint="Enter Landmark"
+                            android:textColor="#3E3E3E"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/saveDetailsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edge_card"
+                android:backgroundTint="@color/DarkBlue"
+                android:layout_below="@+id/customerDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:text="Save Details"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:elevation="8dp"
+                android:textColor="@color/logoColorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/saveDetailsBtn"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

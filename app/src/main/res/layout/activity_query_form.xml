@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.QueryForm"
+    android:background="@drawable/ic_bg_top_header">
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_semi_circle"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/logoColorWhite"/>
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Enquiry Form"
+            android:elevation="8dp"
+            android:textColor="@color/logoColorWhite"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:scrollbars="none"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/customerDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/sharp_edge_card"
+                android:elevation="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="My Details"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:id="@+id/customerNameFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCustomerName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20sp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_person"
+                        app:tint="@color/DarkBlue" />
+
+                    <EditText
+                        android:id="@+id/customerFirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:inputType="text"
+                        android:hint="First Name"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16dp"
+                        android:layout_weight="2"/>
+
+                    <EditText
+                        android:id="@+id/customerLastName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:inputType="text"
+                        android:hint="Last Name"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16dp"
+                        android:layout_weight="2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customerNumberFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerNameFieldLayout"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_phone_24"
+                        app:tint="@color/DarkBlue" />
+
+                    <EditText
+                        android:id="@+id/customerNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:hint="Enter Mobile Number"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customerDropFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerNumberFieldLayout"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/DarkBlue" />
+
+                    <EditText
+                        android:id="@+id/customerAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:hint="Enter Address"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16sp"
+                        android:layout_weight="4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customerPincodeFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerDropFieldLayout"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/DarkBlue" />
+
+                    <EditText
+                        android:id="@+id/Pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:inputType="number"
+                        android:hint="Enter Pincode"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customerLandmarkFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerPincodeFieldLayout"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/DarkBlue" />
+
+                    <EditText
+                        android:id="@+id/Landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:hint="Enter Landmark"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/customerQueryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/sharp_edge_card"
+                android:elevation="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtCustomerQuery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Query"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:id="@+id/customerProblemFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCustomerQuery"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_enquiry"
+                        app:tint="@color/DarkBlue" />
+
+                    <EditText
+                        android:id="@+id/customerQuery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:inputType="textMultiLine"
+                        android:hint="Enter Your Query"
+                        android:textColor="#3E3E3E"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customerPaymentFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerProblemFieldLayout"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/DarkBlue" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerPaymentMode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Select Payment Mode"
+                        android:textColor="@color/DarkBlue"
+                        android:textSize="18sp"
+                        android:layout_weight="4"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/paymentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerPaymentFieldLayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:checkedButton="@id/radioCOD"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20sp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="15dp">
+
+                    <RadioButton
+                        android:id="@+id/radioCOD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:text="COD"
+                        android:textColor="@color/DarkBlue" />
+
+                    <RadioButton
+                        android:id="@+id/radioUPI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:text="UPI Payment"
+                        android:textColor="@color/DarkBlue" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/upiPaymentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/paymentType">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="220dp"
+                        android:src="@drawable/upi_qr"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtScan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="*Scan this QR code*"
+                        android:textColor="@color/DarkGrey"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtOR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="-------OR-------"
+                        android:textColor="@color/DarkGrey"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtUPINumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="8899305097@ybl"
+                        android:textColor="@color/DarkGrey"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/paymentScreenshotFieldLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="@color/DarkBlue" />
+
+                        <TextView
+                            android:id="@+id/txtPaymentScreenshot"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Upload Payment Screenshot"
+                            android:textColor="@color/DarkBlue"
+                            android:textSize="18sp"
+                            android:layout_weight="4"/>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/uploadImgLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="gone"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/paymentSSImage"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_add_image"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/txtUploadImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Upload image"
+                                android:textAlignment="center"
+                                android:textColor="@color/logoColorBlack"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sendEnquiryBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edge_card"
+                android:backgroundTint="@color/DarkBlue"
+                android:layout_marginTop="20sp"
+                android:text="Send Enquiry"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:elevation="8dp"
+                android:visibility="visible"
+                android:textColor="@color/logoColorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

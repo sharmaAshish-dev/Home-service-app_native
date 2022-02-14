@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">VR Home Services</string>
+    <string name="Lorem_epsum">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus interdum erat, vitae iaculis nisl sollicitudin id. Nulla facilisi.
+
+        Vivamus at diam dictum, ornare risus vel, convallis magna. Sed tempus odio sapien, vel pulvinar purus auctor a.
+
+        Sed id justo convallis, tincidunt sem id, bibendum elit. Integer id velit malesuada, eleifend quam nec, tempus arcu. Aenean eu tincidunt neque. Donec iaculis non augue nec porttitor.
+        Nullam in erat ac metus facilisis sollicitudin. Mauris tempus, ligula pretium hendrerit pharetra, velit nunc viverra enim, nec laoreet nibh magna id diam.
+
+    </string>
+
+    <string name="electrician">
+
+        <![CDATA[
+             ● Time Management.<br>
+                   <br>
+             ● Attention to Detail.<br>
+                   <br>
+             ● Highly skilled professionals who install, maintain, and repair electrical systems to ensure proper working order and safety.<br>
+                   <br>
+             ● diagnosing electrical and electronic trouble, installing cables and wires. <br>
+                 <br>
+            ● performing other tasks that may be deemed necessary to ensure proper power solutions.<br>
+        ]]>
+
+    </string>
+
+    <string name="plumber">
+
+        <![CDATA[
+             ● Accessing Confined Spaces.<br>
+                   <br>
+             ● Applying Adhesives, Sealants, and Caulk.<br>
+                   <br>
+             ● Cleaning Sewer Lines.<br>
+                   <br>
+             ● Hand and Arm Strength. <br>
+                 <br>
+             ● Installing Appliances Like Refrigerators, Dishwashers, Water Softeners, and Water Heaters.<br>
+                 <br>
+             ● Installing Pipe Systems for Gas, Water, Steam, and Other Liquids.<br>
+                 <br>
+             ● Manual Dexterity.<br>
+                 <br>
+             ● Precision.<br>
+                 <br>
+             ● Genuine Charges with full satisfaction.<br>
+
+        ]]>
+
+    </string>
+
+    <string name="beautician">
+
+        <![CDATA[
+
+             ● Beauticians are professionals engaged in improving a client\'s appearance through hair care, nail, beauty and skin care. <br>
+                   <br>
+             ● Friendly and Approachable Beautician.<br>
+                   <br>
+             ● Sensitivity and understanding towards your clients\' needs.<br>
+                   <br>
+             ● The ability to work well with your hands for giving treatments.<br>
+                 <br>
+             ● Excellent verbal communication skills to explain treatments.<br>
+                 <br>
+             ● To be thorough and pay attention to detail.<br>
+                 <br>
+             ● Get yourself a great look.<br>
+        ]]>
+
+    </string>
+
+    <string name="carpenter">
+
+        <![CDATA[
+             ● Carpenters construct, erect, install, and repair structures and fixtures made from wood and other materials.<br>
+                   <br>
+             ● Read blueprints as well as taking direction from verbal and written descriptions.<br>
+                   <br>
+             ● General framing - Construct the wooden structure for a building (walls, floors, and doorframes)<br>
+                   <br>
+             ● Build staircases.<br>
+                 <br>
+             ● Install windows, doors and siding.<br>
+        ]]>
+
+    </string>
+
+    <string name="tailor">
+
+        <![CDATA[
+             ● A tailor is someone who sews, joins, reinforces, or finishes clothing or other items.<br>
+                   <br>
+             ● They may create new pieces of clothing from patterns and designs or alter existing garments to fit customers better. <br>
+                   <br>
+             ● They work for textile and apparel manufacturers, department stores, and dry cleaners.<br>
+                   <br>
+             ● Hire our professional tailors to feature your imagination on Outfits.<br>
+        ]]>
+
+    </string>
+
+    <string name="teacher">
+
+        <![CDATA[
+             ● tutoring staff – tutors students in Math, English and Writing with a few clients up to Sophomore college level.<br>
+                   <br>
+             ● tutors in developing lesson plans and updating academic curriculum.<br>
+                   <br>
+             ● Provides assistance to students in their current workload by reviewing past test results.<br>
+                   <br>
+             ● Prepares practice quizzes, long and mastery tests for students to work on at the center and at home.<br>
+                 <br>
+             ● Handles special classes for students with learning disabilities.<br>
+        ]]>
+
+    </string>
+
+    <string name="vehicle">
+
+        <![CDATA[
+             ● Cabs can be hired instantly without even going out of the home<br>
+                   <br>
+             ● Passengers can get updates on cab location and their approximate arrival time<br>
+                   <br>
+             ● Cashless ways of payment mean passengers need not fuss about cash and change<br>
+                   <br>
+             ● Passengers can rate drivers which make the system more transparent and trustworthy<br>
+                   <br>
+             ● Passengers find it convenient to book cabs without waiting on the road and refusal<br>
+        ]]>
+
+    </string>
+
+    <string name="tiffin">
+
+        <![CDATA[
+             ● Get your Favourite food Booked now…!<br>
+                   <br>
+             ● It Makes the ordering process easier.<br>
+                   <br>
+             ● Great discount with high quality food.<br>
+                   <br>
+             ● Fresh and Tasty meals all the time.<br>
+                   <br>
+             ● Efficient customer and order management.<br>
+                   <br>
+             ● Free and cheap marketing.<br>
+        ]]>
+
+    </string>
+
+    <string name="grocery">
+
+        <![CDATA[
+             ● Experience In-Store Prices and Sales and Then Some<br>
+                   <br>
+             ● Buy in Bulk with Ease<br>
+                   <br>
+             ● Browse on Your Time<br>
+                   <br>
+             ● Avoid the Line and Shop in the Comfort of your Home<br>
+                   <br>
+             ● Enjoy the Convenience of Online Grocery<br>
+        ]]>
+
+    </string>
+
+    <string name="jewellery">
+
+        <![CDATA[
+             ● Utterly convenient<br>
+                   <br>
+             ● A wider selection<br>
+                   <br>
+             ● Lower prices<br>
+                   <br>
+             ● Fast<br>
+        ]]>
+
+    </string>
+
+    <string name="medicine">
+
+        <![CDATA[
+             ● Authentic Medicines<br>
+                   <br>
+             ● A wider selection<br>
+                   <br>
+             ● No extra Charges.<br>
+                   <br>
+             ● Genuine Price.<br>
+        ]]>
+
+    </string>
+
+    <string name="kids">
+
+        <![CDATA[
+             ● Save Time<br>
+                   <br>
+             ● Better Prices<br>
+                   <br>
+             ● Easy Comparisons<br>
+                   <br>
+             ● Check Availability<br>
+                   <br>
+             ● Best Deals<br>
+                   <br>
+             ● Easy to Send Gifts<br>
+                   <br>
+             ● Quick Returns<br>
+        ]]>
+
+    </string>
+
+    <string name="appliance">
+
+        <![CDATA[
+             ● Installation.<br>
+                   <br>
+             ● Repair and Services.<br>
+                   <br>
+             ● Analyse and Diagnose.<br>
+                   <br>
+             ● Genuine Price.<br>
+        ]]>
+
+    </string>
+
+
+</resources>
